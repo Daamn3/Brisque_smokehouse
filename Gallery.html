@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=DynaPuff|Archivo Black&effect=outline' rel='stylesheet'>
+
+    <title>Gallery</title>
+    <style>
+         body::before{
+                        content: "";           
+                        position: fixed;
+                        top: 0;               
+                        left: 0;             
+                        width: 100%;           
+                        height: 100%;        
+                        background-color: rgba(14, 13, 12, 0.537);
+                        background-image: url('smokehosue.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        opacity: 0.6;
+                        z-index: -1;
+        }
+        .nav {
+        
+                background-color: rgba(214, 199, 184,0.5); 
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                
+        }
+
+        .nav li {
+                border:1px;
+                border-radius: 10px;
+                display: flex;
+                font-size: 18px;
+                padding: 15px;
+                float: left;
+                font-family: 'DynaPuff';
+                opacity: 1;
+                
+                
+        }
+        .nav a{
+            display: block;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #2d1302; 
+            opacity: 1;
+        }
+        .nav li:hover{
+            background-color: rgb(140, 87, 7);
+            opacity: 1;
+        }
+        #logo{
+            height:70px;
+            width:70px;
+            
+        }
+        ul li a.active{
+            background-color: rgb(140, 87, 7);
+        }
+        .slogan{
+            margin: auto;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            margin-right: 50%;
+            margin-top: 100px;
+            
+        }
+        .hero
+        {
+            margin-left: 500px;
+            margin-top: 40px;
+        }
+        .hero h1{
+            margin-left: 70px;
+            font-family: 'DynaPuff';
+            color: rgb(72, 44, 11);
+        }
+        .images {
+           display: grid;
+           grid-template-columns: repeat(3,1fr);
+           
+        }
+        .image{
+            max-height: 900px;
+            max-width: max-content;
+            width: auto;
+            height: auto;
+            border-radius: 25px;
+            overflow: hidden;  
+            
+            gap: 20px; 
+        }
+        .slogan h1,h3{
+            color: rgb(105, 69, 26);
+            font-family: 'DynaPuff';
+            font-weight: bold;
+
+        }
+        
+    </style>
+</head>
+<body>
+      <ul class="nav" >
+        <img id="logo" src="brisque logo.jpg" alt="logo"  >
+        
+        <li><a  href="cafehome.html">Home</a></li>
+        <li><a  href="menu.html" >Menu</a></li>
+        <li><a class="active" href="Gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="hero">
+        <p class="slogan">
+        <h1>Gallery</h1>
+        <h3>Where Every Slice Tells a Story</h3>
+        </p>
+        
+    </div>
+    <hr>
+    <div class="images">
+        
+        <div class="image"><img src="img\brisket.jpg" alt="brisket.jpg"></div>
+        <div class="image"><img src="img\baked beans.jpg" alt="baked beans.jpg"></div>
+        <div class="image"><img src="img\Banana-Pudding.jpg" alt="Banana-Pudding.jpg"></div>
+        <div class="image"><img src="img\brisket platter.jpg" alt="brisket platter.jpg"></div>
+        <div class="image"><img src="img\brisket taco.jpg" alt="brisket taco.jpg"></div>
+        <div class="image"><img src="img\Healthier Waldorf Salad.jpg" alt="coleslaw.png"></div>
+        <div class="image"><img src="img\burgar.jpg" alt="burgar.jpg"></div>
+        <div class="image"><img src="img\cornbread.jpg" alt="cornbread.jpg"></div>
+        <div class="image"><img src="img\french fries.jpg" alt="\french fries.jpg"></div>
+        <div class="image"><img src="img\lemonade.jpg" alt="lemonade.jpg"></div>
+        <div class="image"><img src="img\lucid-origin_im_currently_developing_a_website_for_a_brisket_smokehouse_restaurent_i_need_a_b-0.jpg" alt=""></div>
+        <div class="image"><img src="img\mac and cheese.jpg" alt="mac and cheese"></div>
+        <div class="image"><img src="img\peach cobbler.jpg" alt="peach cobbler"></div>
+        <div class="image"><img src="img\pecan pie.jpg" alt="\pecan pie"></div>
+        <div class="image"><img src="img\sweet tea.jpg" alt="sweet tea.jpg"></div>
+        <div class="image"><img src="img\The Ultimate Guide to Resting Smoked Brisket.jpg" alt="The Ultimate Guide "></div>
+        <div class="image"><img src="img\Cinematic .jpg" alt="The Ultimate Guide "></div>
+        <div class="image"><img src="img\Perfect Grilled.jpg" alt="The Ultimate Guide "></div>
+        
+
+    </div>
+    
+</body>
+</html>

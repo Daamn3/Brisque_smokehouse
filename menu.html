@@ -1,0 +1,289 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=DynaPuff|Archivo Black&effect=outline' rel='stylesheet'>
+        <title>Menu</title>
+        <style>
+         body::before{
+                        content: "";           
+                        position: fixed;
+                        top: 0;               
+                        left: 0;             
+                        width: 100%;           
+                        height: 100%;        
+                        background-color: rgba(14, 13, 12, 0.537);
+                        background-image: url('smokehosue.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        opacity: 0.4;
+                        z-index: -1;
+        }
+        .nav {
+        
+                background-color: rgba(214, 199, 184,0.5); 
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                
+        }
+
+        .nav li {
+                border:1px;
+                border-radius: 10px;
+                display: flex;
+                font-size: 18px;
+                padding: 15px;
+                float: left;
+                font-family: 'DynaPuff';
+                opacity: 1;
+                
+                
+        }
+        .nav a{
+            display: block;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #2d1302; 
+            opacity: 1;
+        }
+        .nav li:hover{
+            background-color: rgb(140, 87, 7);
+            opacity: 1;
+        }
+        #logo{
+            height:70px;
+            width:70px;
+            
+        }
+        .menu{
+            border-collapse: collapse;
+            width:60%;
+        }
+        
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+            }
+            td{
+                font-weight: 600;
+            }
+            th{
+                font-weight: 900;
+            }
+        tr:hover {background-color: rgb(140, 87, 7);}
+        #brisketimg{
+            display: flex;
+            position: absolute;
+            height:210px;
+            width:400px;
+            margin-left: 900px;
+            margin-top: -200px;
+            border: 3px solid black;
+            border-radius: 10px;
+            
+        }
+        #side{
+           float: right;
+            
+        }
+        #bevrage{
+            position: absolute;
+            
+        }
+        #desserts{
+            
+            float: right;
+        }
+        #firesimg{
+            display: flex;
+            position: absolute;
+            height:230px;
+            width:400px;
+            margin-top: -30px;
+            margin-left: 30px;
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+        #beerimg{
+            display: flex;
+            position: absolute;
+            height:230px;
+            width:400px;
+            margin-left: 900px;
+            margin-top: -200px;
+            border: 3px solid black;
+            border-radius: 10px;
+        }
+        #brownieimg{
+            display: flex;
+            position: absolute;
+            height:230px;
+            width:400px;
+            margin-top: -30px;
+            margin-left: 30px;
+            border: 3px solid black;
+            border-radius: 10px;
+
+        }
+        ul li a.active{
+            background-color: rgb(140, 87, 7);
+        }
+        </style>
+    </head>
+    <body>
+        <ul class="nav" >
+        <img id="logo" src="brisque logo.jpg" alt="logo"  >
+        
+        <li><a  href="cafehome.html">Home</a></li>
+        <li><a class="active"href="menu.html" >Menu</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="men">
+    <table class="menu" id="brisket">
+        <tr>
+            <th>Dish</th>
+            <th>Price</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Classic Smoked Brisket</td>
+            <td>24.99</td>
+            <td>Slow-smoked for 14 hours with our signature rub</td>
+        </tr>
+        <tr>
+            <td>Brisket Sandwich</td>
+            <td>16.99</td>
+            <td>Chopped brisket on a brioche bun with BBQ sauce and coleslaw</td>
+        </tr>
+        <tr>
+            <td>Brisket Tacos (3)</td>
+            <td>14.99</td>
+            <td>Corn tortillas topped with brisket, pico de gallo, and chipotle crema.</td>
+        </tr>
+        <tr>
+            <td>Brisket Burrito Bowl</td>
+            <td>18.99</td>
+            <td>Rice, black beans, corn, avocado, brisket, and spicy ranch</td>
+        </tr>
+        <tr>
+          <td>"Texas Brisket Plate</td>
+          <td>28.99</td>
+          <td>1lb of brisket with two sides, cornbread, and pickled jalapeños</td>
+        </tr>
+        
+    </table>
+    <img id="brisketimg" src="Smoked Brisket.jpg" alt="smoked brisket">
+    
+    <br><br><br><br>
+    <table class="menu" id="side">
+        <tr>
+            <th>Dish</th>
+            <th>Price</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Loaded Mac & Cheese</td>
+            <td>7.99</td>
+            <td>Three cheese blend with crispy topping</td>
+        </tr>
+        <tr>
+            <td>BBQ Baked Beans</td>
+            <td>5.99</td>
+            <td>Slow-cooked with brisket scraps and molasses</td>
+        </tr>
+        <tr>
+            <td>Coleslaw</td>
+            <td>4.99</td>
+            <td>Creamy, tangy, and fresh.</td>
+        </tr>
+        <tr>
+            <td>Cornbread (2 pcs)</td>
+            <td>4.99</td>
+            <td>Honey butter glazed cornbread.</td>
+        </tr>
+        <tr>
+            <td>Seasoned Fries</td>
+            <td>5.99</td>
+            <td>Crispy fries with our signature seasoning.</td>
+        </tr>
+
+    </table>
+    <img id="firesimg" src="fries.jpg" alt="fries">
+    <br>
+    <br><br><br>
+    
+    <table class="menu" id="beverage">
+        <tr>
+            <th>Drink</th>
+            <th>Price</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Sweet Tea</td>
+            <td>3.99</td>
+            <td>Southern style, perfectly sweetened</td>
+        </tr>
+        <tr>
+            <td>Lemonade</td>
+            <td> 3.99</td>
+            <td>Fresh squeezed daily</td>
+        </tr>
+        <tr>
+            <td>Craft Soda"</td>
+            <td>4.99</td>
+            <td>Root beer, cream soda, or orange.</td>
+        </tr>
+        <tr>
+            <td>Craft Beer</td>
+            <td>7.99</td>
+            <td>Local rotating selection</td>
+        </tr>
+        <tr>
+            <td>Bottled Water</td>
+            <td> 2.49</td>
+            <td>Spring water</td>
+        </tr>
+
+    </table>
+    <img id="beerimg" src="craft beer.avif" alt="craft beer">
+    <br>
+    <br><br><br>
+    <table class="menu" id="desserts">
+        <tr>
+            <th>Dish</th>
+            <th>Price</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Banana Pudding</td>
+            <td>6.99</td>
+            <td>Layered vanilla pudding, bananas, and Nilla wafers.</td>
+        </tr>
+        <tr>
+            <td>Pecan Pie</td>
+            <td>7.99</td>
+            <td>With bourbon whipped cream</td>
+        </tr>
+        <tr>
+            <td>Brownie Sundae</td>
+            <td> 8.99</td>
+            <td>Warm brownie, vanilla ice cream, chocolate sauce.</td>
+        </tr>
+        <tr>
+            <td>Peach Cobbler</td>
+            <td>7.99</td>
+            <td>"With vanilla ice cream</td>
+        </tr>
+    </table>
+    <img id="brownieimg" src="browniesundae.png" alt="browniesundae">
+    </div>
+        
+    </body>
+    </html>

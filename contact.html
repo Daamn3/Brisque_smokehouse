@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link href='https://fonts.googleapis.com/css?family=DynaPuff|Archivo Black&effect=outline' rel='stylesheet'>
+    <style>
+         body::before{
+                        content: "";           
+                        position: fixed;
+                        top: 0;               
+                        left: 0;             
+                        width: 100%;           
+                        height: 100%;        
+                        background-color: rgba(14, 13, 12, 0.537);
+                        background-image: url('smokehosue.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        opacity: 0.6;
+                        z-index: -1;
+        } 
+        .nav {
+        
+                background-color: rgba(230, 180, 130,0.5); 
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                
+        }
+
+        .nav li {
+                border:1px;
+                border-radius: 10px;
+                display: flex;
+                font-size: 18px;
+                padding: 15px;
+                float: left;
+                font-family: 'DynaPuff';
+                opacity: 1;
+                
+                
+        }
+        .nav a{
+            display: block;
+            border-radius: 10px;
+            text-decoration: none;
+            color: #502305; 
+            opacity: 1;
+        }
+        .nav li:hover{
+            background-color: rgb(204, 122, 0);
+            opacity: 1;
+        }
+        #logo{
+            height:70px;
+            width:70px;
+            
+        }
+          ul li a.active{
+            background-color: rgb(140, 87, 7);
+        }
+        .form{
+            border: 1px solid black;
+            border-radius: 50px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-top: 90px;
+            margin-right: 400px;
+            margin-left: 400px;
+            padding: 20px;
+            background-color: rgba(205, 160, 114, 0.6);
+            font-weight: bold; 
+            font-family: DynaPuff;
+            
+
+        }
+        .form input,textarea{
+            border-radius: 10px;
+            background-color: #e8cfbe;
+        }
+        .form textarea{
+            width: 250px;
+            height:70px
+        }
+        .range{
+            background-color: #d77e47;
+
+        }
+        .btn{
+            
+            position: absolute;
+            border: 1px solid black;
+            background-color: #d77e47;
+            border-radius: 10px;
+            height: 30px;
+            width: 160px;
+            font-family: Dynapuff;
+        }
+        #submit{
+            margin-top: -25px;
+            margin-left: -200px;
+        }
+        #reset{
+            margin-top: -25px;
+            margin-left: -1px;
+
+        }
+    </style>
+</head>
+<body>
+    <ul class="nav" >
+        <img id="logo" src="brisque logo.jpg" alt="logo"  >
+        
+        <li><a  href="cafehome.html">Home</a></li>
+        <li><a href="menu.html" >Menu</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+    </ul>
+    <div class="form">
+        <form class="info" action="">
+         
+           
+            <label for="port">Name </label>
+            <input type="url" name="Name"><br><br><br>
+            <label for="linkd">Phone Number</label>
+            <input type="url" name="phno"><br><br><br>
+            <label for="linkd">E-Mail</label>
+            <input type="url" name="email"><br><br><br>
+            <label for="ta">Describe Yourself:</label><br>
+            <textarea >
+                "tell us about yourself"
+
+            </textarea><br><br><br>
+            <label for="SATIS">How satisfied are you with our Services:</label><br>
+            <input class="range" type="range">
+            <br><br><br>
+            <label for="terms">declaration:</label><br>
+             <label for="">have you read/agree with our terms and conditions</label>
+             <input type="checkbox" name="terms" value="t&s"><br>
+             <label for="">subscribe to our newsletter for more update</label>
+             <input type="checkbox" name="terms" value="nwesletter"><br><br><br>
+          <input class="btn" id="submit" type="submit" value="submit" style="border-radius: 10px;">
+          <input class="btn" id="reset" type="reset" value="reset" style="border-radius: 10px;">
+
+         
+      </form>
+
+    </div>
+    
+</body>
+</html>
